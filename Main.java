@@ -54,5 +54,5 @@ public class Main {
     // b. Allow client access the original class with an abstract interface.
 
     // 2. Liskov Substitution Principle (L.S.P) 
-    // 
+    // "If you have class B inherits from class A then class A should be replaceable by class B without any changes"
 }
