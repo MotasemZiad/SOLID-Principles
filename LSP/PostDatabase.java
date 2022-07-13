@@ -12,4 +12,8 @@ public class PostDatabase {
     public String addMentionPost(String post) {
         return "Mention Post: " + post;
     }
+
+    public String addLinkPost(String post) {
+        return "Link Post: " + post;
+    }
 }

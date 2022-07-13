@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import LSP.LinkPost;
 import LSP.MentionPost;
 import LSP.Post;
 import LSP.PostDatabase;
@@ -33,6 +34,7 @@ public class Main {
         newPosts.add("original post");
         newPosts.add("#tag post");
         newPosts.add("@mention post");
+        newPosts.add("https://github.com/motasemziad/");
 
         Post postObj;
         for (String post : newPosts) {
@@ -40,6 +42,8 @@ public class Main {
                 postObj = new TagPost();
             }else if(post.startsWith("@")){
                 postObj = new MentionPost();
+            }else if(post.startsWith("https://")) {
+                postObj = new LinkPost();
             }else {
                 postObj = new Post();
             }
