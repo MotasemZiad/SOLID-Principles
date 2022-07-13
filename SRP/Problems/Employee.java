@@ -1,4 +1,4 @@
-package Problems;
+package SRP.Problems;
 
 public class Employee {
     private String id;

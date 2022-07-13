@@ -1,6 +1,6 @@
-package Solutions;
+package SRP.Solutions;
 
-import Problems.Employee;
+import SRP.Problems.Employee;
 
 public class EmployeeService {
 
