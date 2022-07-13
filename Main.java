@@ -1,7 +1,13 @@
+import java.util.ArrayList;
 import java.util.Scanner;
+
+import LSP.LinkPost;
+import LSP.MentionPost;
+import LSP.Post;
+import LSP.PostDatabase;
+import LSP.TagPost;
 import OCP.ManagerEmployee;
 import OCP.RegularEmployee;
-
 
 public class Main {
 
@@ -14,14 +20,37 @@ public class Main {
         // int age = in.nextInt();
         // System.out.println("Hello " + name + ", You are " + age + " years old.");
 
-        ManagerEmployee employee1 = new ManagerEmployee("1", "Mohamed Reda", 2000.0);
-        RegularEmployee employee2 = new RegularEmployee("2", "Ahmed Ali", 800.0);
+        // ManagerEmployee employee1 = new ManagerEmployee("1", "Mohamed Reda", 2000.0);
+        // RegularEmployee employee2 = new RegularEmployee("2", "Ahmed Ali", 800.0);
 
         
-        // System.out.println(employee1.toString() + "\nBonus: " + employee1.calcHoursBonus(5) + "");
-        // System.out.println(employee2.toString() + "\nBonus: " + employee2.calcHoursBonus(5) + "");
-        System.out.println(employee1.toString() + "\nBonus: " + employee1.calcHoursBonusUsingInterface(5) + "");
-        System.out.println(employee2.toString() + "\nBonus: " + employee2.calcHoursBonusUsingInterface(5) + "");
+        // // System.out.println(employee1.toString() + "\nBonus: " + employee1.calcHoursBonus(5) + "");
+        // // System.out.println(employee2.toString() + "\nBonus: " + employee2.calcHoursBonus(5) + "");
+        // System.out.println(employee1.toString() + "\nBonus: " + employee1.calcHoursBonusUsingInterface(5) + "");
+        // System.out.println(employee2.toString() + "\nBonus: " + employee2.calcHoursBonusUsingInterface(5) + "");
+
+        PostDatabase db = new PostDatabase();
+        ArrayList<String> newPosts = new ArrayList<String>();
+        newPosts.add("original post");
+        newPosts.add("#tag post");
+        newPosts.add("@mention post");
+        newPosts.add("https://github.com/motasemziad/");
+
+        Post postObj;
+        for (String post : newPosts) {
+            if(post.startsWith("#")){
+                postObj = new TagPost();
+            }else if(post.startsWith("@")){
+                postObj = new MentionPost();
+            }else if(post.startsWith("https://")) {
+                postObj = new LinkPost();
+            }else {
+                postObj = new Post();
+            }
+
+            String result = postObj.createPost(db, post);
+            System.out.println(result);
+        }
 
     }
 
@@ -53,6 +82,7 @@ public class Main {
     // a. By adding new functionality to derived classes.
     // b. Allow client access the original class with an abstract interface.
 
-    // 2. Liskov Substitution Principle (L.S.P) 
+    // 3. Liskov Substitution Principle (L.S.P) 
     // "If you have class B inherits from class A then class A should be replaceable by class B without any changes"
 }
+
