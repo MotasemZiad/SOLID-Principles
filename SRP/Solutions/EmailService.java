@@ -1,4 +1,4 @@
-package Solutions;
+package SRP.Solutions;
 
 public class EmailService {
     public static void send(String email, String subject, String message) {

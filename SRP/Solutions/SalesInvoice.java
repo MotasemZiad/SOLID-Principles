@@ -1,4 +1,4 @@
-package Solutions;
+package SRP.Solutions;
 
 public class SalesInvoice {
 
