@@ -48,7 +48,7 @@ of low level classes but depends on abstraction.
 
 Dependency Inversion is a principle. Dependency Injection is the
 implementation of this principle.
-We should not depend on concrete classes. we should depend on abstract
+we should not depend on concrete classes. we should depend on abstract
 classes.
 
 [Coupling VS. Cohesion:](https://www.geeksforgeeks.org/software-engineering-differences-between-coupling-and-cohesion/)
