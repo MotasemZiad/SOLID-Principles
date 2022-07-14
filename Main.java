@@ -1,11 +1,6 @@
-import java.util.ArrayList;
-
+import DIP.Gmail;
+import DIP.Hotmail;
 import DIP.Notification;
-import LSP.LinkPost;
-import LSP.MentionPost;
-import LSP.Post;
-import LSP.PostDatabase;
-import LSP.TagPost;
 
 public class Main {
 
@@ -21,9 +16,9 @@ public class Main {
         // ManagerEmployee employee1 = new ManagerEmployee("1", "Mohamed Reda", 2000.0);
         // RegularEmployee employee2 = new RegularEmployee("2", "Ahmed Ali", 800.0);
 
-        // // System.out.println(employee1.toString() + "\nBonus: " +
+        // System.out.println(employee1.toString() + "\nBonus: " +
         // employee1.calcHoursBonus(5) + "");
-        // // System.out.println(employee2.toString() + "\nBonus: " +
+        // System.out.println(employee2.toString() + "\nBonus: " +
         // employee2.calcHoursBonus(5) + "");
         // System.out.println(employee1.toString() + "\nBonus: " +
         // employee1.calcHoursBonusUsingInterface(5) + "");
@@ -53,10 +48,17 @@ public class Main {
         // System.out.println(result);
         // }
 
-        Notification notification = new Notification();
+        // Inject Dependencies
+        // Constructor Injection
+        Notification gmailNotification = new Notification(new Gmail("address", "miziad2000@gmail.com",
+                "moatasem.abunema@gmail.com"));
+        gmailNotification.sendMail();
 
-        notification.sendGmail();
-        notification.sendHotmail();
+        // Method Injection
+        Notification hotmailNotification = new Notification();
+        hotmailNotification.sendMail(new Hotmail("address", "miziad2000@gmail.com",
+                "moatasem.abunema@gmail.com"));
+
     }
 
     // SOLID Principles: It is a mnemonic acronym for five design principles

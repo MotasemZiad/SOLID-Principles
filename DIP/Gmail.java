@@ -1,6 +1,6 @@
 package DIP;
 
-public class Gmail {
+public class Gmail implements IMessage {
     private String address;
     private String from;
     private String to;
@@ -38,6 +38,7 @@ public class Gmail {
         this.to = to;
     }
 
+    @Override
     public void send() {
         // Code
     }
