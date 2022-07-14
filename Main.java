@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 
+import DIP.Notification;
 import LSP.LinkPost;
 import LSP.MentionPost;
 import LSP.Post;
@@ -29,29 +30,33 @@ public class Main {
         // System.out.println(employee2.toString() + "\nBonus: " +
         // employee2.calcHoursBonusUsingInterface(5) + "");
 
-        PostDatabase db = new PostDatabase();
-        ArrayList<String> newPosts = new ArrayList<String>();
-        newPosts.add("original post");
-        newPosts.add("#tag post");
-        newPosts.add("@mention post");
-        newPosts.add("https://github.com/motasemziad/");
+        // PostDatabase db = new PostDatabase();
+        // ArrayList<String> newPosts = new ArrayList<String>();
+        // newPosts.add("original post");
+        // newPosts.add("#tag post");
+        // newPosts.add("@mention post");
+        // newPosts.add("https://github.com/motasemziad/");
 
-        Post postObj;
-        for (String post : newPosts) {
-            if (post.startsWith("#")) {
-                postObj = new TagPost();
-            } else if (post.startsWith("@")) {
-                postObj = new MentionPost();
-            } else if (post.startsWith("https://")) {
-                postObj = new LinkPost();
-            } else {
-                postObj = new Post();
-            }
+        // Post postObj;
+        // for (String post : newPosts) {
+        // if (post.startsWith("#")) {
+        // postObj = new TagPost();
+        // } else if (post.startsWith("@")) {
+        // postObj = new MentionPost();
+        // } else if (post.startsWith("https://")) {
+        // postObj = new LinkPost();
+        // } else {
+        // postObj = new Post();
+        // }
 
-            String result = postObj.createPost(db, post);
-            System.out.println(result);
-        }
+        // String result = postObj.createPost(db, post);
+        // System.out.println(result);
+        // }
 
+        Notification notification = new Notification();
+
+        notification.sendGmail();
+        notification.sendHotmail();
     }
 
     // SOLID Principles: It is a mnemonic acronym for five design principles
@@ -95,6 +100,8 @@ public class Main {
      * 5. Dependency Inversion Principle (D.I.P)
      * "High level modules should not depend upon low level modules.
      * Both should depend upon abstraction"
+     * Dependency Inversion is a principle. Dependency Injection is the
+     * implementation of this principle.
      * We should not depend on concrete classes. we should depend on abstract
      * classes.
      * Tightly Coupling VS. Loosely Coupling
