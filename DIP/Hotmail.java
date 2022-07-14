@@ -1,6 +1,6 @@
 package DIP;
 
-public class Hotmail {
+public class Hotmail implements IMessage{
     private String address;
     private String from;
     private String to;
@@ -39,6 +39,7 @@ public class Hotmail {
         this.to = to;
     }
 
+    @Override
     public void send() {
         // Code
     }
