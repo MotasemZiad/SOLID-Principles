@@ -1,29 +1,18 @@
 package ISP;
 
-public class CashOrder implements IOrder {
+import ISP.Interfaces.ICashOrder;
+
+public class CashOrder implements ICashOrder {
 
     @Override
-    public void ProcessCashInvoice() {
-        // TODO Auto-generated method stub
-        
+    public void processCashInvoice() {
+        // Cash order invoice code
     }
 
     @Override
-    public void ProcessCreditInvoice() {
-        // TODO Auto-generated method stub
-        
+    public void completeOrder() {
+        // Complete order code logic
+
     }
 
-    @Override
-    public void ProcessOnlinePaymentInvoice() {
-        // TODO Auto-generated method stub
-        
-    }
-
-    @Override
-    public void ProcessInstallmentInvoice() {
-        // TODO Auto-generated method stub
-        
-    }
-    
 }

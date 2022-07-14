@@ -1,13 +1,10 @@
 import java.util.ArrayList;
-import java.util.Scanner;
 
 import LSP.LinkPost;
 import LSP.MentionPost;
 import LSP.Post;
 import LSP.PostDatabase;
 import LSP.TagPost;
-import OCP.ManagerEmployee;
-import OCP.RegularEmployee;
 
 public class Main {
 

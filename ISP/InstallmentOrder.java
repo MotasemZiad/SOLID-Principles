@@ -1,29 +1,12 @@
 package ISP;
 
-public class InstallmentOrder implements IOrder{
+import ISP.Interfaces.IInstallmentOrder;
+
+public class InstallmentOrder implements IInstallmentOrder {
 
     @Override
-    public void ProcessCashInvoice() {
-        // TODO Auto-generated method stub
-        
+    public void processInstallmentInvoice() {
+        // Installment order invoice code
     }
 
-    @Override
-    public void ProcessCreditInvoice() {
-        // TODO Auto-generated method stub
-        
-    }
-
-    @Override
-    public void ProcessOnlinePaymentInvoice() {
-        // TODO Auto-generated method stub
-        
-    }
-
-    @Override
-    public void ProcessInstallmentInvoice() {
-        // TODO Auto-generated method stub
-        
-    }
-    
 }
