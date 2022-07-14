@@ -7,14 +7,11 @@ object-oriented designs more understandable, flexible, and maintainable.
 4. I: **I**nterface Segregation Principle
 5. D: **D**ependency Inversion Principle
 
-<img src="/Images/00 Introduction.png">
 
 ## Single Responsibility
 The class should solve only one problem it should
 have a single reason to change. It helps us with **Code Reusability**.
 It should be executed on both classes and methods.
-
-<img src="/Images/01 Single Responsibility.png">
 
     
 ## Open/Closed
@@ -27,17 +24,11 @@ changing existing one.
 - By adding new functionality to derived classes.
 - Allow client access the original class with an abstract interface.
 
-<img src="/Images/02 Open-Closed a.png">
-<img src="/Images/02 Open-Closed b.png">
-<img src="/Images/02 Open-Closed c.png">
-
 
 ## Liskov Substitution
 If you substitute any type with one of its subtypes,
 the behavior should not change.
 > "If you have class B inherits from class A then class A should be replaceable by class B without any changes".
-
-<img src="/Images/03 Liskov Substitution.png">
 
 
 ## Interface Segregation
@@ -48,8 +39,6 @@ methods.
 **How to achieve this?**
 - Avoid fat interface.
 - Client must not implement unnecessary methods.
-
-<img src="/Images/04 Interface Segregation.png">
 
 
 ## Dependency Inversion
@@ -67,10 +56,6 @@ classes.
 Coupling describes the relationships between modules, and Cohesion describes
 the relationships within them.
 Usually low coupling and high cohesion is good for software.
-
-<img src="/Images/05 Dependency Inversion a.png">
-<img src="/Images/05 Dependency Inversion b.png">
-<img src="/Images/05 Dependency Inversion c.png">
 
 
 
