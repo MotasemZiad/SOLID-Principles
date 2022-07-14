@@ -5,48 +5,6 @@ import DIP.Notification;
 public class Main {
 
     public static void main(String[] args) {
-        // System.out.println("Hello World");
-        // Scanner in = new Scanner(System.in);
-        // System.out.println("Enter your name");
-        // String name = in.nextLine();
-        // System.out.println("Enter your age");
-        // int age = in.nextInt();
-        // System.out.println("Hello " + name + ", You are " + age + " years old.");
-
-        // ManagerEmployee employee1 = new ManagerEmployee("1", "Mohamed Reda", 2000.0);
-        // RegularEmployee employee2 = new RegularEmployee("2", "Ahmed Ali", 800.0);
-
-        // System.out.println(employee1.toString() + "\nBonus: " +
-        // employee1.calcHoursBonus(5) + "");
-        // System.out.println(employee2.toString() + "\nBonus: " +
-        // employee2.calcHoursBonus(5) + "");
-        // System.out.println(employee1.toString() + "\nBonus: " +
-        // employee1.calcHoursBonusUsingInterface(5) + "");
-        // System.out.println(employee2.toString() + "\nBonus: " +
-        // employee2.calcHoursBonusUsingInterface(5) + "");
-
-        // PostDatabase db = new PostDatabase();
-        // ArrayList<String> newPosts = new ArrayList<String>();
-        // newPosts.add("original post");
-        // newPosts.add("#tag post");
-        // newPosts.add("@mention post");
-        // newPosts.add("https://github.com/motasemziad/");
-
-        // Post postObj;
-        // for (String post : newPosts) {
-        // if (post.startsWith("#")) {
-        // postObj = new TagPost();
-        // } else if (post.startsWith("@")) {
-        // postObj = new MentionPost();
-        // } else if (post.startsWith("https://")) {
-        // postObj = new LinkPost();
-        // } else {
-        // postObj = new Post();
-        // }
-
-        // String result = postObj.createPost(db, post);
-        // System.out.println(result);
-        // }
 
         // Inject Dependencies
         // Constructor Injection
