@@ -51,13 +51,14 @@ implementation of this principle.
 We should not depend on concrete classes. we should depend on abstract
 classes.
 
-[Coupling VS. Cohesion](https://www.geeksforgeeks.org/software-engineering-differences-between-coupling-and-cohesion/)
-
+[Coupling VS. Cohesion:](https://www.geeksforgeeks.org/software-engineering-differences-between-coupling-and-cohesion/)
 Coupling describes the relationships between modules, and Cohesion describes
 the relationships within them.
 Usually low coupling and high cohesion is good for software.
 
-
+<br>
+<br>
+<br>
 
 Credits <3 :
 [Mohammed Reda](https://youtube.com/playlist?list=PLnqAlQ9hFYdflFSS4NigVB7aSoYPNwHTL)
