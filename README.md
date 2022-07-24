@@ -8,13 +8,13 @@ object-oriented designs more understandable, flexible, and maintainable.
 5. D: **D**ependency Inversion Principle
 
 
-## Single Responsibility
+## 1) Single Responsibility
 The class should solve only one problem it should
 have a single reason to change. It helps us with **Code Reusability**.
 It should be executed on both classes and methods.
 
     
-## Open/Closed
+## 2) Open/Closed
 The class should be open for extension, closed for
 modification.
 In other words, any new functionality should be done by adding new classes instead of
@@ -25,13 +25,13 @@ changing existing one.
 - Allow client access the original class with an abstract interface.
 
 
-## Liskov Substitution
+## 3) Liskov Substitution
 If you substitute any type with one of its subtypes,
 the behavior should not change.
 > "If you have class B inherits from class A then class A should be replaceable by class B without any changes".
 
 
-## Interface Segregation
+## 4) Interface Segregation
 Avoid making a general interface contain all
 methods.
 > "Clients should not be forced to depend on methods they do not use".
@@ -41,7 +41,7 @@ methods.
 - Client must not implement unnecessary methods.
 
 
-## Dependency Inversion
+## 5) Dependency Inversion
 Higher level classes should not know the implementation
 of low level classes but depends on abstraction.
 > "High level modules should not depend upon low level modules. Both should depend upon abstraction"
