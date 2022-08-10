@@ -1,11 +1,11 @@
 # SOLID-Principles
 It is a mnemonic acronym for five design principles intended to make 
 object-oriented designs more understandable, flexible, and maintainable.
-1. S: **S**ingle Responsibility Principle
-2. O: **O**pen/Closed Principle
-3. L: **L**iskov Substitution Principle
-4. I: **I**nterface Segregation Principle
-5. D: **D**ependency Inversion Principle
+1. **S**ingle Responsibility Principle
+2. **O**pen/Closed Principle
+3. **L**iskov Substitution Principle
+4. **I**nterface Segregation Principle
+5. **D**ependency Inversion Principle
 
 
 ## 1) Single Responsibility
