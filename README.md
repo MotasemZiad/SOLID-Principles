@@ -1,6 +1,9 @@
 # SOLID-Principles
 It is a mnemonic acronym for five design principles intended to make 
 object-oriented designs more understandable, flexible, and maintainable.
+
+> "To create understandable, readable, and testable code that many developers can collaboratively work on."
+
 1. **S**ingle Responsibility Principle
 2. **O**pen/Closed Principle
 3. **L**iskov Substitution Principle
