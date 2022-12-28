@@ -1,5 +1,4 @@
-import 05DIP.Gmail;
-
+import DIP.Gmail;
 import DIP.Hotmail;
 import DIP.Notification;
 
